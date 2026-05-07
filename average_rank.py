@@ -93,7 +93,7 @@ def average_rank():
 
 
 ### PLOT the rank distribution of the doctor's and hopital's partners
-def rank_distribution(n=200, trials=200):
+def rank_distribution(n=300, trials=300):
     doc_ranks = []
     hosp_ranks = []
 
@@ -111,8 +111,12 @@ def rank_distribution(n=200, trials=200):
     plt.hist(doc_ranks, alpha=0.5, label="Doctors")
     plt.hist(hosp_ranks, alpha=0.5, label="Hospitals")
     plt.legend()
-    plt.title("Rank distribution")
+    plt.title("Distribution of Average Paired Match for Doctors & Hospitals")
     plt.show()
 
+
+# RUN average_rank() for part 2
 # average_rank()
+
+# RUN rank_distribution() for part 3
 rank_distribution()
