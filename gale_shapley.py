@@ -52,30 +52,11 @@ def gale_shapley(n, doc_pref, hospital_pref):
     return matchings, num_proposals
     
 
-
-# function to plot stuff
-
-# def main():
-#     return
-
 if __name__ == "__main__":
     # Part S
     # generate preference list for doctors and hospitals
-    # n = 10
-    # doc_pref = random_pref(n)
-    # hospital_pref = random_pref(n)
-    # matchings = gale_shapley(doc_pref, hospital_pref)
-    # print(matchings)
-    # random_pref(3)
-    n = 4
-    a = [1, 2, 3, 4]
-
-    doctor_prefs, hospital_prefs = generate_preferences(n, a)
-
-    print("Doctors' preferences:")
-    for i, prefs in enumerate(doctor_prefs):
-        print(f"Doctor {i}: {prefs}")
-
-    print("\nHospitals' preferences:")
-    for i, prefs in enumerate(hospital_prefs):
-        print(f"Hospital {i}: {prefs}")
+    n = 10
+    doc_pref = random_pref(n)
+    hospital_pref = random_pref(n)
+    matchings = gale_shapley(doc_pref, hospital_pref)
+    print(matchings)
